@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <!--  Pagina Inicial  -->
@@ -36,7 +36,7 @@
 
       <div class="container mx-auto flex flex-col justify-between h-full md:flex md:flex-row">
         <div class="h-[25%] shadow-2xl md:h-full md:w-[25%]">
-          <img class="w-full h-full object-cover object-center md:" src="images/laser/laser2.jpg" alt="">
+          <img class="w-full h-full object-cover" src="src/images/laser/laser2.jpg" alt="">
         </div>
         <div class="bg-red-500 h-full md:w-[75%]">
           Uma descrição do serviço (sugestão)
@@ -46,15 +46,35 @@
 
     <section class="bg-gray-100 h-screen overflow-hidden">
       <div class="container mx-auto flex flex-col justify-between h-full md:flex md:flex-row">
-        <div class="h-[25%] shadow-2xl md:h-full md:w-[25%]">
-          <img class="w-full h-full object-cover object-center md:" src="images/laser/laser2.jpg" alt="">
-        </div>
-        <div class="bg-blue-500 h-full md:w-[75%]">
-          Uma descrição do serviço
-        </div>
-      </div>
+        <div class="h-[30%] shadow-2xl md:h-full md:w-[25%]">
+           <!-- Slider main container -->
+              <div class="swiper h-full">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="bg-blue-500 h-full md:w-[75%]">
+              Uma descrição do serviço
+            </div>
     </section>
     
-     
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>
